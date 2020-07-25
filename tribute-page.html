@@ -3,31 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/starfleet.jpg" />
+    <link rel="apple-touch-icon" href="./images/starfleet.jpg" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <title>My favorite Captain</title>
+    <title>My Favorite Captain</title>
   </head>
-  <body>
+  <body class="container-fluid bg-secondary">
     <main id="main">
-      <h1 id="title">My favorite Captain</h1>
-      <div id="img-div">
-        <img
-          id="image"
-          src="https://github.com/mshuber1981/FCC-Responsive-Web-Design-Projects/images/picard.jpg"
-          alt="Captain Picard"
-        />
-        <caption id="img-caption"></caption>
+      <div class="container bg-light vh-100 overflow-auto text-center">
+        <h1 id="title" class="py-3">My Favorite Star Trek Captain</h1>
+        <div id="img-div">
+          <img
+            id="image"
+            class="img-fluid pb-2"
+            src="./images/picard.jpg"
+            alt="Captain Picard"
+          />
+          <figcaption id="img-caption">
+            Captain Jean-Luc Picard
+          </figcaption>
+        </div>
+        <section id="tribute-info">
+          <h2 class="py-4">
+            Captain Picard, U.S.S. Enterprise NCC-1701-D
+          </h2>
+          <p class="text-left px-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem unde eos deserunt, officia sint distinctio deleniti
+            ut neque praesentium vel veritatis qui aut, doloremque nisi
+            voluptatum obcaecati hic harum quos.
+          </p>
+          <p class="text-left px-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            delectus, laborum eveniet dolorum sed necessitatibus voluptatum
+            earum quidem possimus odit aliquid blanditiis rerum ducimus ad.
+            Officiis iste numquam dolor rerum.
+          </p>
+        </section>
+        <h3 class="py-5">
+          More about Captain Picard from
+          <a
+            id="tribute-link"
+            href="https://en.wikipedia.org/wiki/Jean-Luc_Picard"
+            target="_blank"
+            >Wikipedia</a
+          >
+        </h3>
       </div>
-      <section id="tribute-info">
-        <h2></h2>
-        <p></p>
-        <p></p>
-        <a href="" target="_blank"></a>
-      </section>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
