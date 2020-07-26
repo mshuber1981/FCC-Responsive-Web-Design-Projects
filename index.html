@@ -11,10 +11,11 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
     <title>FCC Responsive Web Design Projects</title>
   </head>
   <body class="bg-secondary">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <button
         class="navbar-toggler"
         type="button"
@@ -43,7 +44,8 @@
       </div>
     </nav>
     <main class="container">
-      <div class="jumbotron mt-4 text-center">
+      <br />
+      <div class="jumbotron mt-5 text-center">
         <h1 class="display-4">Welcome!</h1>
         <p class="lead">
           Thanks for checking out my spin on the
@@ -73,10 +75,14 @@
           <li
             data-target="#carouselExampleCaptions"
             data-slide-to="0"
-            class="active"
+            class="active bg-success"
           ></li>
-          <!-- <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li> -->
+          <li
+            data-target="#carouselExampleCaptions"
+            data-slide-to="1"
+            class="bg-success"
+          ></li>
+          <!-- <li data-target="#carouselExampleCaptions" data-slide-to="2"></li> -->
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -86,20 +92,24 @@
                 class="d-block w-100"
                 alt="Tribute Page"
               />
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="text-primary">Tribute Page</h1>
+              </div>
             </a>
-
-            <div class="carousel-caption d-none d-md-block">
-              <h1 class="text-success">Tribute Page</h1>
-            </div>
-          </div>
-          <!-- <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
           </div>
           <div class="carousel-item">
+            <a href="survey-form.html">
+              <img
+                src="./images/form-slide.png"
+                class="d-block w-100 bg-success"
+                alt="Survey Form"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="text-success">Survey Form</h1>
+              </div>
+            </a>
+          </div>
+          <!-- <div class="carousel-item">
             <img src="..." class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
