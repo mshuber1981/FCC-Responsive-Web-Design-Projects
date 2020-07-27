@@ -20,6 +20,9 @@
   .top-survey {
     padding-top: 50rem;
   }
+  #tribute-info h2 {
+    font-size: x-large;
+  }
 }
 @media (max-width: 320px) {
   .top-survey {

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Survey Form</title>
   </head>
-  <body class="bg-secondary">
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <button
         class="navbar-toggler ml-5"
@@ -40,177 +40,187 @@
               >Survey Form <span class="sr-only">(current)</span></a
             >
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product-landing.html"
+              >Product Landing Page</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
-    <main class="container bg-light">
-      <div
-        class="d-flex flex-column justify-content-center vh-100 overflow-auto py-4"
-      >
-        <h1 id="title" class="text-center top-survey">Fishing Survey</h1>
-        <p id="description" class="text-left my-4">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum sapiente
-          facere ab, tempora rem sunt nulla possimus dicta, doloremque tenetur
-          impedit ullam, deleniti placeat. Porro a distinctio deserunt
-          dignissimos cumque?
-        </p>
+    <main class="container-fluid bg-light">
+      <div class="container">
+        <div
+          class="d-flex flex-column justify-content-center vh-100 overflow-auto py-4"
+        >
+          <h1 id="title" class="text-center top-survey">Fishing Survey</h1>
+          <p id="description" class="text-left my-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+            sapiente facere ab, tempora rem sunt nulla possimus dicta,
+            doloremque tenetur impedit ullam, deleniti placeat. Porro a
+            distinctio deserunt dignissimos cumque?
+          </p>
 
-        <form id="survey-form" class="p-5 border border-primary">
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label id="name-label" for="name">First name</label>
+          <form id="survey-form" class="p-5 border border-primary">
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label id="name-label" for="name">First name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Provide your first name"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationDefault02">Last name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault02"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationDefault03">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault03"
+                  required
+                />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="dropdown">Lake Location</label>
+                <select class="custom-select" id="dropdown" required>
+                  <option selected disabled value="">Select State</option>
+                  <option>MN</option>
+                  <option>ND</option>
+                  <option>SD</option>
+                  <option>WI</option>
+                </select>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">Zip</label>
+                <input
+                  type="text"
+                  pattern="\d*"
+                  minlength="5"
+                  class="form-control"
+                  id="zip"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Email address</label>
               <input
-                type="text"
+                type="email"
                 class="form-control"
-                id="name"
-                placeholder="Provide your first name"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="someone@example.com"
+                required
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group">
+              <label id="number-label" for="number">Years of experience</label>
+              <input
+                type="number"
+                min="0"
+                max="75"
+                class="form-control exp w-25"
+                id="number"
+                aria-describedby="emailHelp"
+                placeholder="Round up"
                 required
               />
             </div>
-            <div class="col-md-6 mb-3">
-              <label for="validationDefault02">Last name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="validationDefault02"
-              />
+            <div class="form-group">
+              <label for="inlineRadioOptions">Gender</label>
+              <br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >Female</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio3"
+                  value="option3"
+                />
+                <label class="form-check-label" for="inlineRadio3">Other</label>
+              </div>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="validationDefault03">City</label>
-              <input
-                type="text"
-                class="form-control"
-                id="validationDefault03"
-                required
-              />
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="dropdown">Lake Location</label>
-              <select class="custom-select" id="dropdown" required>
-                <option selected disabled value="">Select State</option>
-                <option>MN</option>
-                <option>ND</option>
-                <option>SD</option>
-                <option>WI</option>
-              </select>
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="zip">Zip</label>
-              <input
-                pattern="^[0-9]"
-                minlength="5"
-                class="form-control"
-                id="zip"
-                required
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <label id="email-label" for="email">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              aria-describedby="emailHelp"
-              placeholder="someone@example.com"
-              required
-            />
-            <small id="emailHelp" class="form-text text-muted"
-              >We'll never share your email with anyone else.</small
-            >
-          </div>
-          <div class="form-group">
-            <label id="number-label" for="number">Years of experience</label>
-            <input
-              type="number"
-              min="0"
-              max="75"
-              class="form-control exp w-25"
-              id="number"
-              aria-describedby="emailHelp"
-              placeholder="Round up"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="inlineRadioOptions">Gender</label>
-            <br />
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio1"
-                value="option1"
-              />
-              <label class="form-check-label" for="inlineRadio1">Male</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio2"
-                value="option2"
-              />
-              <label class="form-check-label" for="inlineRadio2">Female</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio3"
-                value="option3"
-              />
-              <label class="form-check-label" for="inlineRadio3">Other</label>
-            </div>
-          </div>
 
-          <div class="form-group">
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value="1"
-                id="invalidCheck2"
-                required
-              />
-              <label class="form-check-label" for="invalidCheck2">
-                Agree to terms and conditions
-              </label>
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="1"
+                  id="invalidCheck2"
+                  required
+                />
+                <label class="form-check-label" for="invalidCheck2">
+                  Agree to terms and conditions
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="2"
+                  id="invalidCheck2"
+                  required
+                />
+                <label class="form-check-label" for="invalidCheck2">
+                  Agree to more stuff and things
+                </label>
+              </div>
             </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value="2"
-                id="invalidCheck2"
-                required
-              />
-              <label class="form-check-label" for="invalidCheck2">
-                Agree to more stuff and things
-              </label>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1"
+                >Comments or concerns?</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1"
-              >Comments or concerns?</label
-            >
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-          </div>
-          <div class="text-center">
-            <button id="submit" class="btn btn-primary" type="submit">
-              Submit form
-            </button>
-          </div>
-        </form>
+            <div class="text-center">
+              <button id="submit" class="btn btn-primary" type="submit">
+                Submit form
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
     <script
