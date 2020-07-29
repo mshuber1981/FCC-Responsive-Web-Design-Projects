@@ -14,37 +14,69 @@
     <title>Product Landing Page</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-      <button
-        class="navbar-toggler ml-5"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+    <header id="header">
+      <nav
+        id="nav-bar"
+        class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-5">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tribute-page.html">Tribute Page</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="survey-form.html">Survey Form</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="product-landing.html"
-              >Product Landing Page <span class="sr-only">(current)</span></a
-            >
-          </li>
-        </ul>
+        <button
+          class="navbar-toggler ml-5"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-5">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tribute-page.html">Tribute Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="survey-form.html">Survey Form</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="product-landing.html"
+                >Product Landing Page <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >PLP Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <img
+          id="header-img"
+          class="img-fluid"
+          src="./images/company.jpg"
+          alt="Company Logo"
+        />
       </div>
-    </nav>
+    </header>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
