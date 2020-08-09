@@ -43,7 +43,7 @@
   #email-input {
     width: 100% !important;
   }
-  #navbar {
+  .nav-target {
     display: none;
   }
   .main-section {
@@ -70,15 +70,24 @@
   .exp {
     min-width: 100%;
   }
-  #navbar {
+  .nav-target {
     display: none;
   }
   .main-section {
     height: auto !important;
   }
+  .main-target1 > h1 {
+    font-size: xx-large;
+  }
+  .main-target2 > h1 {
+    display: none;
+  }
 }
 @media (max-height: 320px) {
   .top-survey {
     padding-top: 65rem;
+  }
+  .main-target1 {
+    margin-top: 2rem;
   }
 }
