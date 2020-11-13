@@ -1,7 +1,5 @@
 # FCC Responsive Web Design Projects
 
-## Description
-
 My <a href="https://www.freecodecamp.org">freecodecamp.org</a> Responsive Web Design Projects.
 
 See my profile <a href="https://www.freecodecamp.org/mshuber1981">here</a>.
