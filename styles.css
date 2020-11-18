@@ -31,7 +31,6 @@
 /* Media Queries */
 @media (max-width: 414px) {
   .top-survey {
-    padding-top: 44rem;
     font-size: xx-large;
   }
   .exp {
