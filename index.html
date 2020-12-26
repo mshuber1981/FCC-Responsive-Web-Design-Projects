@@ -79,59 +79,46 @@
     </header>
 
     <main class="container">
-      <section id="welcome-section">
-        <div
-          class="main-target1 d-flex flex-column justify-content-center align-items-center bg-light mb-5 vh-100"
-        >
-          <h1 class="display-4">Welcome!</h1>
-          <p class="lead text-center my-5">
-            Thanks for checking out my spin on the
-            <a href="https://www.freecodecamp.org" target="_blank"
-              >freecodecamp.org</a
-            >
-            Responsive Web Design Projects.
-          </p>
-          <a
-            id="profile-link"
-            class="btn btn-primary btn-lg"
-            href="https://www.freecodecamp.org/mshuber1981"
-            target="_blank"
-            role="button"
-            ><i class="fab fa-free-code-camp"></i> FCC Profile</a
+      <section
+        id="welcome-section"
+        class="d-flex flex-column min-vh-100 justify-content-center align-items-center bg-light"
+      >
+        <h1 class="display-4">Welcome!</h1>
+        <p class="lead text-center px-2">
+          Thanks for checking out my spin on the
+          <a href="https://www.freecodecamp.org" target="_blank"
+            >freecodecamp.org</a
           >
-        </div>
+          Responsive Web Design Projects.
+        </p>
+        <a
+          id="profile-link"
+          class="btn btn-primary btn-lg"
+          href="https://www.freecodecamp.org/mshuber1981"
+          target="_blank"
+          role="button"
+          ><i class="fab fa-free-code-camp"></i> FCC Profile</a
+        >
       </section>
       <section
         id="projects"
-        class="main-target2 d-flex flex-column justify-content-center align-items-center vh-100"
+        class="d-flex flex-column min-vh-100 justify-content-center align-items-center mb-5"
       >
-        <h1 class="text-white shadow-lg p-5 mb-5">Projects</h1>
+        <h2 class="rounded shadow-lg my-3 text-white">Projects</h2>
         <div
-          id="carouselExampleCaptions"
-          class="carousel slide"
+          id="carouselCaptions"
+          class="carousel slide mb-5"
           data-ride="carousel"
         >
           <ol class="carousel-indicators">
             <li
-              data-target="#carouselExampleCaptions"
+              data-target="#carouselCaptions"
               data-slide-to="0"
-              class="active bg-success"
+              class="active"
             ></li>
-            <li
-              data-target="#carouselExampleCaptions"
-              data-slide-to="1"
-              class="bg-success"
-            ></li>
-            <li
-              data-target="#carouselExampleCaptions"
-              data-slide-to="2"
-              class="bg-success"
-            ></li>
-            <li
-              data-target="#carouselExampleCaptions"
-              data-slide-to="3"
-              class="bg-success"
-            ></li>
+            <li data-target="#carouselCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselCaptions" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -189,7 +176,7 @@
           </div>
           <a
             class="carousel-control-prev"
-            href="#carouselExampleCaptions"
+            href="#carouselCaptions"
             role="button"
             data-slide="prev"
           >
@@ -198,7 +185,7 @@
           </a>
           <a
             class="carousel-control-next"
-            href="#carouselExampleCaptions"
+            href="#carouselCaptions"
             role="button"
             data-slide="next"
           >
@@ -208,9 +195,7 @@
         </div>
       </section>
 
-      <footer
-        class="container-fluid fixed-bottom bg-primary text-center pt-2 mt-5"
-      >
+      <footer class="container-fluid fixed-bottom bg-primary pt-2 text-center">
         <a
           href="https://www.linkedin.com/in/michael-huber-9b567a173"
           target="_blank"

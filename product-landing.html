@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Product Landing Page</title>
   </head>
-  <body data-spy="scroll" data-target="#nav-bar" data-offset="0">
+  <body data-spy="scroll" data-target="#nav-bar" data-offset="1">
     <header id="header">
       <nav
         id="nav-bar"
@@ -64,24 +64,25 @@
           </ul>
         </div>
       </nav>
-      <div id="plp-top" class="container vh-100 text-center">
+      <div id="plp-top" class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
         <img
           id="header-img"
           class="img-fluid"
           src="./images/company.jpg"
           alt="Company Logo"
         />
+        <br>
         <a href="index.html">
-          <button class="btn btn-primary">Portfolio</button>
+          <button class="btn btn-primary">Back to Portfolio</button>
         </a>
       </div>
     </header>
     <main>
       <section
         id="welcome"
-        class="d-flex flex-column justify-content-center align-items-center vh-100"
+        class="d-flex flex-column min-vh-100 justify-content-center align-items-center"
       >
-        <h1 class="text-primary mb-4">Welcome</h1>
+        <h2 class="text-primary">Welcome</h2>
         <div class="container">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
@@ -105,9 +106,9 @@
       </section>
       <section
         id="our-story"
-        class="d-flex flex-column justify-content-center align-items-center vh-100"
+        class="d-flex flex-column min-vh-100 justify-content-center align-items-center"
       >
-        <h2 class="text-primary mb-4">Video</h2>
+        <h2 class="text-primary">Video</h2>
         <div class="container">
           <div class="res-frame border border-primary">
             <iframe
@@ -122,9 +123,9 @@
       </section>
       <section
         id="goodbye"
-        class="d-flex flex-column justify-content-center align-items-center vh-100"
+        class="d-flex flex-column min-vh-100 justify-content-center align-items-center"
       >
-        <h2 class="text-primary mb-4">Goodbye</h2>
+        <h2 class="text-primary">Goodbye</h2>
         <div class="container">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
@@ -150,9 +151,9 @@
             action="https://www.freecodecamp.com/email-submit"
             target="_blank"
           >
-            <div class="form-group text-center">
+            <div class="form-group text-center mb-5">
               <label class="text-primary" for="email">Get Updates</label>
-              <div id="email-input" class="input-group mb-2 w-50 mx-auto">
+              <div id="email-input" class="input-group mb-2 mx-auto">
                 <input
                   id="email"
                   type="email"
